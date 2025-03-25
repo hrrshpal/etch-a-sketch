@@ -48,7 +48,20 @@ rgbBtn.addEventListener("click", () => {
 })
 gameControls.appendChild(rgbBtn)
 
-// COntrol 3 -> Dim
+// Control 3 -> Darkening effect
+const darkening = document.createElement("button")
+darkening.setAttribute("class", "btn")
+darkening.textContent = "Darkening Effect"
+darkening.addEventListener("click", () => {
+    let opacity = 0;
+    document.querySelectorAll(".cols").forEach( square => {
+        square.addEventListener("mouseover", () => {
+            if(opacity < 1.0) opacity += 0.1
+            square.style.backgroundColor = `rgba(0,0,0,${opacity})`
+        })
+    })
+})
+gameControls.appendChild(darkening)
 
 
 // Control 4 -> Reset

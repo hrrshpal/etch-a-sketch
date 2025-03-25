@@ -5,7 +5,9 @@
 
 #controls{
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
+    width: 500px;
+    margin: 30px auto;
 }
 
 .container{
@@ -34,4 +36,5 @@
     text-align: center;
     font-weight: bold;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-top: 30px;
 }
