@@ -3,6 +3,10 @@
     border-radius: 1px;
 }
 
+#controls{
+    display: flex;
+    justify-content: center;
+}
 
 .container{
     display: flex;
@@ -11,18 +15,23 @@
     width: 500px;
     height: 500px;
     flex-wrap: nowrap;
-    overflow: hidden;
-    border: 1px solid black;
+    overflow:hidden;
+    border: 1px solid white;
     box-sizing: border-box;
 }
 
-.change-grid{
+.btn{
     display: flex;
     margin: 20px auto;
-
     padding: 10px;
     background-color: white;
     border: 1px solid black;
     font-size: medium;;
     font-weight: bold;
+}
+
+#name{
+    text-align: center;
+    font-weight: bold;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
